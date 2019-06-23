@@ -1,0 +1,31 @@
+syntax = "proto3"; // Specify proto3 version.
+
+service Report { // Service class to be used by the clients
+  rpc crate(Message) returns (Status) {}
+  rpc get(Message) returns (Status) {}
+  rpc edit(Message) returns (Status) {}
+  rpc delete (Message) returns (Status) {}
+}
+message Message {
+  repeated ReportInformation reportInfo = 1;
+}
+message ReportInformation {
+  int32 id = 1;
+  string name = 2;
+  repeated ReportStatus status = 3;
+}
+message ReportStatus {
+  enum Status {
+    PASS = 0;
+    FAIL = 1;
+    ERROR = 2;
+    SKIP = 3;
+    PENDING = 4;
+  }
+}
+message Status { // Information that will be passed between client and service
+  string status = 1;
+  int32 code = 2;
+  string errorMessage = 3;
+  repeated ReportInformation reportInfo = 4;
+}

@@ -1,0 +1,74 @@
+{
+  "terminal.integrated.cwd": "Terminal.app",
+  "workbench.colorTheme": "Default Light+",
+  "editor.formatOnSave": true,
+  "editor.fontSize": 16,
+  /**
+   * prettier config
+   *
+   **/
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 80,
+  "prettier.parser": "flow",
+  "prettier.semi": true,
+  "prettier.endOfLine": "auto",
+  "prettier.tabWidth": 2,
+  /**
+   * eslint config
+   *
+   **/
+  // Controls whether eslint is enabled for JavaScript files or not.
+  "eslint.enable": true,
+  // The package manager you use to install node modules.
+  "eslint.packageManager": "npm",
+  // Always show the ESlint status bar item.
+  "eslint.alwaysShowStatus": true,
+  // A path added to NODE_PATH when resolving the eslint module.
+  "eslint.nodePath": null,
+  // Uses the legacy module resolving.
+  "eslint._legacyModuleResolve": false,
+  // The eslint options object to provide args normally passed to eslint when executed from a command line (see http://eslint.org/docs/developer-guide/nodejs-api#cliengine).
+  "eslint.options": {},
+  // Traces the communication between VSCode and the eslint linter service.
+  "eslint.trace.server": "off",
+  // Run the linter on save (onSave) or on type (onType)
+  "eslint.run": "onType",
+  // Turns auto fix on save on or off.
+  "eslint.autoFixOnSave": false,
+  //
+  "eslint.workingDirectories": [],
+  // An array of language ids which should be validated by ESLint
+  "eslint.validate": ["javascript", "javascriptreact"],
+  "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
+  "explorer.confirmDelete": false,
+  "window.zoomLevel": 0,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSaveTimeout": 5000,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-path": "/Users/minhhoang/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+  },
+  "yaml.format.enable": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "protoc": {
+    "path": "/usr/local/Cellar/protobuf/3.7.1/bin/protoc"
+  },
+  "clang-format.executable": "/usr/local/Cellar/clang-format/2019-01-18/bin/clang-format"
+}
