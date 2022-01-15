@@ -17,7 +17,7 @@
     "grpc_tools_node_protoc_ts": "^2.5.3",
     "protobufjs": "^6.8.8",
     "rimraf": "^2.6.3",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "tslint": "^5.18.0",
     "tslint-microsoft-contrib": "^6.2.0",
     "typescript": "^3.5.2",
